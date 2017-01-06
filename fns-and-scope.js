@@ -36,8 +36,8 @@ function welcome() {
 
 //What is the difference between arguments and parameters?
 
-//Answer Here
-
+// Arguments are the values passed to a function when it is called.
+// Parameters are the values within parenthesis in the function signuature.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -45,8 +45,19 @@ function welcome() {
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
+/*
+1. 0
+2. false
+3. null
+4. undefined
+5. NaN
+6. ''
 
-//Answer Here
+var emptyStr = '';
+
+if(emptyStr) //FALSE
+
+*/
 
 
 
