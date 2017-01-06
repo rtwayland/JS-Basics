@@ -28,7 +28,7 @@ function getName() {
 //then alerts "Welcome, " plus whatever the users name is.
 
 function welcome() {
-  alert('Welcome, ' + getName());
+    alert('Welcome, ' + getName());
 }
 
 
@@ -67,17 +67,21 @@ if(emptyStr) //FALSE
 
 //Create a function called myName that returns your name
 
-//Code Here
+function myName() {
+    return 'Raleigh';
+}
 
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-//Code Here
+var newMyName = function() {
+    return 'Raleigh';
+};
 
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName());
 
 //////////////////PROBLEM 7////////////////////
 
@@ -85,10 +89,14 @@ if(emptyStr) //FALSE
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-//Code Here
-
+function outerFn() {
+    return function() {
+        return 'Raleigh';
+    };
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-//Code Here
+var innerFn = outerFn();
 
 //Now invoke innerFn.
+innerFn();
